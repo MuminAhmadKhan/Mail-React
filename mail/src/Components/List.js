@@ -8,9 +8,10 @@ const List = ({list}) => {
     const [search,setSearch]=useState('')
     useEffect(() => {
       setMaillist([...list])
-    }, [])
+    }, [list])
     
     const handleSearch = (val)=>{
+        console.log(val)
         setSearch(val);
         if(search==='')
         setMaillist(list)
