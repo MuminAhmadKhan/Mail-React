@@ -34,7 +34,10 @@ const [dc,setDcount]=useState(0)
     <div>
       <Router>
        <Navbar inc ={inc} spc={spc} dc ={dc}/> 
-      <Routes>        
+      <Routes>   
+      <Route  path="/"
+          element = {<Inbox inbox={inbox} />}
+          />     
           <Route  path="/inbox"
           element = {<Inbox inbox={inbox} />}
           />

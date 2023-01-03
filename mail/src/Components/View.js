@@ -67,20 +67,20 @@ const View = ({inbox,spam,deleted,setInbox,setSpam,setDeleted,inc,spc,dc,setInco
     }
   return (
     <div>
-    <ul class="nav justify-content-center">
+    <ul className="nav justify-content-center">
 
-  <li class="nav-item" onClick={handleDelete}>
-    <a class="nav-link">{type!=='deleted'?'Delete':'Restore'}</a>
+  <li className="nav-item" onClick={handleDelete}>
+    <a className="nav-link">{type!=='deleted'?'Delete':'Restore'}</a>
   </li>
   <li className="nav-item" >
-    <a class={`nav-link ${type==='deleted'?'disabled':''}`}onClick={handleSpam} >{type!=='spam'?'Move To Spam':'Remove From Spam'}</a>
+    <a className={`nav-link ${type==='deleted'?'disabled':''}`}onClick={handleSpam} >{type!=='spam'?'Move To Spam':'Remove From Spam'}</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link ">Disabled</a>
+  <li className="nav-item">
+    <a className="nav-link ">Disabled</a>
   </li>
 </ul>
-        <div class="card">
-  <div class="card-body">
+        <div className="card">
+  <div className="card-body">
   <h3>Subject <span>{mail.subject}</span></h3>
   </div>
 </div>

@@ -4,28 +4,25 @@ import { useLocation, Link } from "react-router-dom";
 const Navbar = ({inc,spc,dc}) => {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <Link class="navbar-brand" to="/inbox">Navbar</Link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <Link className="navbar-brand" to="/inbox">Navbar</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/Inbox">Inbox {inc}</Link>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/Inbox">Inbox {inc}</Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/spam">Spam {spc}</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/spam">Spam {spc}</Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/deleted">Deleted {dc}</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/deleted">Deleted {dc}</Link>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      
     </div>
   </div>
 </nav>
